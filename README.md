@@ -1,2 +1,3 @@
-# slide-verify-after
-滑块验证java后端代码
+# 简易图形验证码
+## 支持滑块验证
+

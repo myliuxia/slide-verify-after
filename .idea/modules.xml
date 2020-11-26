@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/vctool.iml" filepath="$PROJECT_DIR$/vctool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/captcha.iml" filepath="$PROJECT_DIR$/captcha.iml" />
     </modules>
   </component>
 </project>

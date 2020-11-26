@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="vctool" />
+        <module name="captcha" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="vctool" target="1.8" />
+      <module name="captcha" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

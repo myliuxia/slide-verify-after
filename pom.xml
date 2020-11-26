@@ -2,21 +2,28 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.example.vc</groupId>
-    <artifactId>demo</artifactId>
+    <groupId>com.keyway</groupId>
+    <artifactId>captcha</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo</name>
-    <description>Demo project for Spring Boot</description>
+    <name>CaptchaValidate</name>
+    <description>科瑞登录验证码构件</description>
 
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <spring-boot.version>2.1.14.RELEASE</spring-boot.version>
+        <spring-boot.version>2.0.6.RELEASE</spring-boot.version>
         <hutool.version>5.4.1</hutool.version>
+        <lombok.version>1.16.22</lombok.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -47,11 +54,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <dependency>
-                <groupId>cn.hutool</groupId>
-                <artifactId>hutool-all</artifactId>
-                <version>${hutool.version}</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -70,9 +72,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.1.14.RELEASE</version>
+                <version>2.3.4.RELEASE</version>
                 <configuration>
-                    <mainClass>com.example.vc.demo.DemoApplication</mainClass>
+                    <mainClass>com.keyway.captcha.CaptchaValidateApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
@@ -85,12 +87,5 @@
             </plugin>
         </plugins>
     </build>
-    <developers>
-        <developer>
-            <name>lcq</name>
-        </developer>
-        <developer>
-            <name>yaz</name>
-        </developer>
-    </developers>
+
 </project>
